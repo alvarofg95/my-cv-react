@@ -1,0 +1,32 @@
+.itemName {
+  color: #000;
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  margin: 20px auto;
+  background-color: #000;
+}
+
+.scrollDiv {
+  height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
