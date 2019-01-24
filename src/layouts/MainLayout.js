@@ -4,9 +4,12 @@ import Footer from '../components/Footer';
 import { NOMBRE } from '../utils/constants';
 import '../style/main.css'
 
+const SCREEN_HEIGHT = window.innerHeight;
+
 export default ({ children }) => {
+  console.log({ SCREEN_HEIGHT })
   return (
-    <div>
+    <div style={{ height: SCREEN_HEIGHT }}>
       <Helmet>
         <title>{NOMBRE}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

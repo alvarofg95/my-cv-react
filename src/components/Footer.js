@@ -2,7 +2,7 @@ import React from 'react';
 import { CURRENT_VERSION } from '../utils/constants';
 
 export default () => (
-  <div className="card-footer text-muted bg-dark navbar-dark text-center">
+  <div className="card-footer text-muted bg-dark navbar-dark text-center align-footer">
     <p>Si quieres tener una web con tu CV solo tienes que contactar conmigo</p>
     <p>
       Página web desarrollada con <a href="https://reactjs.org/">ReactJS</a>{'. '}

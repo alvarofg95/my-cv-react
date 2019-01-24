@@ -37,6 +37,12 @@
   -ms-overflow-style: none;
 }
 
+.align-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .padding-top-50 {
   padding-top: 50px;
 }
