@@ -11,13 +11,13 @@ export default ({ children }) => (
     <Helmet>
       <title>{NOMBRE}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="Página web con la trayectoria profesional de Álvaro Fernández García" />
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossOrigin="anonymous"
       />
-      <link rel="stylesheet" href="./style/main.css" />
     </Helmet>
     {/* <Header /> */}
     {children}

@@ -5,6 +5,7 @@ import Icon from '../components/Icon';
 export default () => (
   <div className="text-center padding-top-50">
     <img src="/img/perfil.png" className="rounded" alt={NOMBRE} />
+    <h1 hidden>{NOMBRE}</h1>
     <h3 className='margin-top-20'>{NOMBRE}</h3>
     <h5>Full Stack Javascript</h5>
     <ul className='profile-list'>
