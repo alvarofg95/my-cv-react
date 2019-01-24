@@ -43,6 +43,22 @@
   width: 100%;
 }
 
+@media (max-width: 575.98px) {
+  .align-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .align-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
 .padding-top-50 {
   padding-top: 50px;
 }
