@@ -11,7 +11,7 @@ export default () => {
   return (
   <MainLayout>
     <div className="container">
-      <div className="row" style={{ paddingTop: 20 }}>
+      <div className="row padding-top-20">
         <div className="col-12 col-sm-4 col-md-4">
           <Profile />
         </div>
