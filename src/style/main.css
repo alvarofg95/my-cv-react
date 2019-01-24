@@ -30,3 +30,20 @@
   overflow-y: scroll;
   scrollbar-width: none;
 }
+
+.padding-top-50 {
+  padding-top: 50px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+}

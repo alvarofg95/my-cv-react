@@ -1,13 +1,13 @@
 import React from 'react';
-import Head from 'next/head';
-// import Header from '../components/Header';
+import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
 import { NOMBRE } from '../utils/constants';
+import '../style/main.css'
 
 export default ({ children }) => {
   return (
     <div>
-      <Head>
+      <Helmet>
         <title>{NOMBRE}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link
@@ -16,8 +16,8 @@ export default ({ children }) => {
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossOrigin="anonymous"
         />
-        <link rel="stylesheet" href="../static/style/main.css" />
-      </Head>
+        <link rel="stylesheet" href="./style/main.css" />
+      </Helmet>
       {/* <Header /> */}
       {children}
       <Footer />
