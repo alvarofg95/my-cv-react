@@ -29,6 +29,12 @@
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  -ms-overflow-style: none;
 }
 
 .padding-top-50 {
