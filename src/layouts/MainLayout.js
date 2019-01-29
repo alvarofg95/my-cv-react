@@ -6,7 +6,7 @@ import '../style/main.css';
 
 const SCREEN_HEIGHT = window.innerHeight;
 
-export default ({ children }) => (
+export default ({ children, language }) => (
   <div style={{ height: SCREEN_HEIGHT }}>
     <Helmet>
       <title>{NOMBRE}</title>
@@ -21,6 +21,6 @@ export default ({ children }) => (
     </Helmet>
     {/* <Header /> */}
     {children}
-    <Footer />
+    <Footer language={language} />
   </div>
 );

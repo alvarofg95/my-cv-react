@@ -1,16 +1,19 @@
 import React from 'react';
-import { EDUCATION } from '../utils/constants';
+import { EDUCATION_SPANISH, EDUCATION_ENGLISH } from '../utils/constants';
 
-export default () => (
-  <div>
-    <h3>Educación</h3>
-    {EDUCATION.map((item, i) => (
-      <div key={`education${i}`}>
-        <a href={item.slug} target="blank" className="itemName">
-          <b>{item.school}</b>
-        </a>
-        <h6>{item.duration}</h6>
-      </div>
-    ))}
-  </div>
-);
+export default ({ language }) => {
+  const education = language === 'spanish' ? EDUCATION_SPANISH : EDUCATION_ENGLISH;
+  return (
+    <div>
+      <h3>Educación</h3>
+      {education.map((item, i) => (
+        <div key={`education${i}`}>
+          <a href={item.slug} target="blank" className="itemName">
+            <b>{item.school}</b>
+          </a>
+          <h6>{item.duration}</h6>
+        </div>
+      ))}
+    </div>
+  );
+};

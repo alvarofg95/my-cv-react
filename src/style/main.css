@@ -53,6 +53,11 @@
   .scrollDiv {
     height: auto;
   }
+
+  .flag {
+    cursor: pointer;
+    padding-top: 15px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -64,6 +69,19 @@
 
   .scrollDiv {
     height: auto;
+  }
+
+  .flag {
+    cursor: pointer;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .flag {
+    cursor: pointer;
+    padding-top: 15px;
+    float: right;
   }
 }
 

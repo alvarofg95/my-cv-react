@@ -1,6 +1,9 @@
 export const NOMBRE = 'Álvaro Fernández García';
 export const EMAIL = 'fernandezgarcia.alvaro@outlook.com';
-export const EXPERIENCE = [
+export const LOCATION_SPANISH = 'Madrid, España';
+export const LOCATION_ENGLISH = 'Madrid, Spain';
+
+export const EXPERIENCE_SPANISH = [
   {
     company: 'Serbatic',
     duration: 'Enero 2019 - Actualidad',
@@ -20,8 +23,28 @@ export const EXPERIENCE = [
     slug: 'https://www.miotek.es/'
   }
 ];
+export const EXPERIENCE_ENGLISH = [
+  {
+    company: 'Serbatic',
+    duration: 'January 2019 - Actuality',
+    technologies: ['NodeJS'],
+    slug: 'http://www.serbatic.es/'
+  },
+  {
+    company: 'BinPar Team Quality',
+    duration: 'April 2017 - December 2018',
+    technologies: ['ASP.NET', 'SQL', 'NodeJS', 'GraphQL', 'Apollo', 'MongoDB', 'Meteor', 'ReactJS', 'NextJS', 'React Native'],
+    slug: 'https://www.binpar.com/'
+  },
+  {
+    company: 'Miotek Factory',
+    duration: 'October 2016 - April 2017',
+    technologies: ['ASP.NET', 'SQL'],
+    slug: 'https://www.miotek.es/'
+  }
+];
 
-export const EDUCATION = [{
+export const EDUCATION_SPANISH = [{
     school: 'IES Azarquiel (Toledo)',
     duration: 'Octubre 2013 - Junio 2016',
     slug: 'http://www.ies-azarquiel.es/'
@@ -34,11 +57,29 @@ export const EDUCATION = [{
     duration: 'Septiembre 2006 - Junio 2011',
     slug: 'http://www.colegiotavera.com/'
 }];
+export const EDUCATION_ENGLISH = [{
+  school: 'IES Azarquiel (Toledo)',
+  duration: 'October 2013 - June 2016',
+  slug: 'http://www.ies-azarquiel.es/'
+}, {
+  school: 'IES Carlos III (Toledo)',
+  duration: 'September 2011 - September 2013',
+  slug: 'http://ies-carlos3.centros.castillalamancha.es/'
+}, {
+  school: 'San Juan Bautista (Toledo)',
+  duration: 'September 2006 - June 2011',
+  slug: 'http://www.colegiotavera.com/'
+}];
 
-export const LANGUAGES = [{
+export const LANGUAGES_SPANISH = [{
     language: 'Inglés',
     certificate: 'Preliminary English Test (B1)',
     slug: 'https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/'
+}];
+export const LANGUAGES_ENGLISH = [{
+  language: 'English',
+  certificate: 'Preliminary English Test (B1)',
+  slug: 'https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/'
 }];
 
 export const CURRENT_VERSION = 'v1.0';

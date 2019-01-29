@@ -1,11 +1,13 @@
 import React from 'react';
-import { EXPERIENCE } from '../utils/constants';
+import { EXPERIENCE_SPANISH, EXPERIENCE_ENGLISH } from '../utils/constants';
 import Tag from '../components/Tag';
 
-export default () => (
+export default ({ language }) => {
+  const experience = language === 'spanish' ? EXPERIENCE_SPANISH : EXPERIENCE_ENGLISH;
+  return (
   <div>
     <h3>Experiencia</h3>
-    {EXPERIENCE.map((item, i) => (
+    {experience.map((item, i) => (
       <div key={`experience${i}`}>
         <a href={item.slug} target="blank" className="itemName">
           <b>{item.company}</b>
@@ -17,4 +19,4 @@ export default () => (
       </div>
     ))}
   </div>
-);
+)};
