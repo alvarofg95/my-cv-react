@@ -1,8 +1,11 @@
-import React from 'react';
+/* import React from 'react';
+import { Link } from 'react-router-dom'; */
 
-export default () => (
+export default () => null;
+/* export default () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a className="navbar-brand">Navbar 1</a>
-    <a className="navbar-brand">Navbar 2</a>
+    <a href="/">Inicio</a>
+    <a href="/contacto">Contacto</a>
   </nav>
 );
+ */

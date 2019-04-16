@@ -20,7 +20,7 @@ export default ({ language }) => {
         <span className="padding-left-5">{location}</span>
       </li>
       <li className='padding-top-20'>
-        <Icon src='/img/linkedin.svg' link="https://www.linkedin.com/in/alvarofg5" />
+        <Icon src='/img/linkedin.svg' link="https://www.linkedin.com/in/alvarofg95" />
       </li>
     </ul>
   </div>

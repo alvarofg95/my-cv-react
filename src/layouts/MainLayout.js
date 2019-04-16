@@ -1,17 +1,21 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 import { NOMBRE } from '../utils/constants';
 import '../style/main.css';
 
 const SCREEN_HEIGHT = window.innerHeight;
 
-export default ({ children, language }) => (
+export default ({ children, language, onClick }) => (
   <div style={{ height: SCREEN_HEIGHT }}>
     <Helmet>
       <title>{NOMBRE}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <meta name="description" content="Página web con la trayectoria profesional de Álvaro Fernández García" />
+      <meta
+        name="description"
+        content="Página web con la trayectoria profesional de Álvaro Fernández García"
+      />
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -19,7 +23,7 @@ export default ({ children, language }) => (
         crossOrigin="anonymous"
       />
     </Helmet>
-    {/* <Header /> */}
+    <Header language={language} onClick={onClick} />
     {children}
     <Footer language={language} />
   </div>
