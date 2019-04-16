@@ -38,9 +38,8 @@
 }
 
 .align-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: 35px;
+  text-align: right;
 }
 
 @media (max-width: 575.98px) {
