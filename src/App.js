@@ -5,7 +5,6 @@ import Profile from './pages/Profile';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Languages from './pages/Languages';
-import Language from './components/Language';
 
 class App extends Component {
   constructor(props) {
@@ -26,9 +25,8 @@ class App extends Component {
   render() {
     const { language } = this.state;
     return (
-      <MainLayout language={language}>
+      <MainLayout language={language} onClick={this.onChangeLanguage}>
         <div className="container">
-          <Language language={language} onChange={this.onChangeLanguage} />
           <div className="row padding-top-20">
             <div className="col-12 col-sm-4 col-md-4">
               <Profile language={language} />
