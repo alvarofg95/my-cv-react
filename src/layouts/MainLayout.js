@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
 import { NOMBRE } from '../utils/constants';
 import '../style/main.css';
 
@@ -23,7 +22,6 @@ export default ({ children, language, onClick }) => (
         crossOrigin="anonymous"
       />
     </Helmet>
-    <Header language={language} onClick={onClick} />
     {children}
     <Footer language={language} />
   </div>

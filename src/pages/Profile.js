@@ -1,5 +1,5 @@
 import React from 'react';
-import { NOMBRE, EMAIL, LOCATION_ENGLISH, LOCATION_SPANISH } from '../utils/constants';
+import { NOMBRE, LOCATION_ENGLISH, LOCATION_SPANISH } from '../utils/constants';
 import Icon from '../components/Icon';
 
 export default ({ language }) => {
@@ -11,10 +11,6 @@ export default ({ language }) => {
     <h3 className='margin-top-20'>{NOMBRE}</h3>
     <h5>Full Stack Javascript</h5>
     <ul className='profile-list'>
-      <li>
-        <Icon small src='/img/mail.svg' />
-        <span className="padding-left-5">{EMAIL}</span>
-      </li>
       <li>
       <Icon small src='/img/map-pin.svg' />
         <span className="padding-left-5">{location}</span>
