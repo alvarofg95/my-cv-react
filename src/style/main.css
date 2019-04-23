@@ -104,3 +104,31 @@
   list-style: none;
   padding: 0;
 }
+
+.display-inline-flex {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.spanForm {
+  width: 80px;
+  padding: 10px;
+}
+
+.inputForm {
+  width: 360px;
+  margin-left: 15px;
+  padding: 8px;
+}
+
+.textarea {
+  height: 160px;
+  resize: none;
+}
