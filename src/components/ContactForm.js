@@ -2,7 +2,7 @@ import React from 'react';
 import CustomButton from './CustomButton';
 
 export default () => (
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true" netfily>
     <div className="display-inline-flex">
       <span className="spanForm">Nombre</span>
       <input className="inputForm" type="text" />
