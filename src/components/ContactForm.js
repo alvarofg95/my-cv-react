@@ -18,6 +18,6 @@ export default () => (
       <textarea className="inputForm textarea" name="message" type="text" />
     </div>
     <br />
-    <CustomButton text="Enviar" type="submit" />
+    <button type="submit">Enviar</button>
   </form>
 );
