@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import NetlifyForm from 'react-netlify-form';
 import CustomButton from './CustomButton';
 
-export default () =>
-  ReactDOM.render(
+export default () => (
+  <div>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message" />
+    </form>
     <form name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
       <div className="display-inline-flex">
@@ -24,4 +29,5 @@ export default () =>
       <br />
       <button type="submit">Enviar</button>
     </form>
-  );
+  </div>
+);
