@@ -1,7 +1,8 @@
 import React from 'react';
+import CustomButton from './CustomButton';
 
 export default () => (
-  <div>
+  <form name="contact" method="POST" data-netlify="true">
     <div className="display-inline-flex">
       <span className="spanForm">Nombre</span>
       <input className="inputForm" type="text" />
@@ -16,5 +17,7 @@ export default () => (
       <span className="spanForm">Mensaje</span>
       <textarea className="inputForm textarea" type="text" />
     </div>
-  </div>
+    <br />
+    <CustomButton text="Enviar" type="submit" />
+  </form>
 );
