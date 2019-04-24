@@ -5,12 +5,12 @@ import CustomButton from './CustomButton';
 
 export default () => (
   <div>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" netlify hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message" />
     </form>
-    <form name="contact" method="post">
+    <form name="contact" method="post" netlify>
       <input type="hidden" name="form-name" value="contact" />
       <div className="display-inline-flex">
         <span className="spanForm">Nombre</span>
