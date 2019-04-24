@@ -6,7 +6,6 @@ import Header from './components/Header';
 
 const App = () => (
   <div>
-    <Header />
     <Switch>
       <Route exact path="/" render={() => <Curriculum />} />
       <Route exact path="/contacto" render={() => <Contact />} />
