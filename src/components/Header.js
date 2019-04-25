@@ -5,5 +5,6 @@ export default () => (
   <nav className="navbar navbar-expand-lg bg-dark">
     <Link to="/">Inicio</Link>
     <Link to="/contacto">Contacto</Link>
+    <Link to="/chatbot">Chatbot</Link>
   </nav>
 );
