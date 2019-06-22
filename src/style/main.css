@@ -85,6 +85,20 @@ header > a {
 }
 
 @media (max-width: 575.98px) {
+  .container {
+    display: block;
+    height: auto;
+  }
+
+  .leftPart {
+    width: 100%;
+  }
+  
+  .rightPart {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
   .align-footer {
     position: relative;
     bottom: 0;
