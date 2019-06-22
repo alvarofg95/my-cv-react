@@ -5,6 +5,6 @@ export default () => (
   <header>
     <Link to="/">Inicio</Link>
     <Link to="/contacto">Contacto</Link>
-    <Link to="/chatbot">Chatbot</Link>
+    <Link to="/proyectos">Proyectos</Link>
   </header>
 );

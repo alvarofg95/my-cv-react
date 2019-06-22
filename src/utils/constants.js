@@ -126,3 +126,16 @@ export const LANGUAGES_ENGLISH = [
 ];
 
 export const CURRENT_VERSION = 'v1.0';
+
+export const PROJECTS = [{
+  title: 'CHATBOT',
+  link: 'https://dialogflowfront-alvarofg95.herokuapp.com/'
+},
+{
+  title: 'CONTADOR DE PALABRAS',
+  link: 'https://contador-de-palabras.netlify.com/'
+},{
+  title: 'HORA DE DORMIR',
+  link: 'https://hora-de-dormir.netlify.com/'
+}
+];

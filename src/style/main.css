@@ -1,9 +1,17 @@
+body {
+  font-family: 'Poppins';
+}
+
 header {
   text-align: center;
   height: 50px;
 }
 
-header > a {
+h1 {
+  text-align: center;
+}
+
+header>a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0px 25px;
@@ -15,7 +23,6 @@ header > a {
   display: inline-flex;
   width: 90%;
   padding: 0px 5%;
-  font-family: 'Poppins';
 }
 
 .leftPart {
@@ -89,26 +96,21 @@ header > a {
     display: block;
     height: auto;
   }
-
   .leftPart {
     width: 100%;
   }
-  
   .rightPart {
     width: 100%;
     margin-bottom: 25px;
   }
-
   .align-footer {
     position: relative;
     bottom: 0;
     width: 100%;
   }
-
   .scrollDiv {
     height: auto;
   }
-
   .flag {
     cursor: pointer;
     padding-top: 15px;
@@ -121,11 +123,9 @@ header > a {
     bottom: 0;
     width: 100%;
   }
-
   .scrollDiv {
     height: auto;
   }
-
   .flag {
     cursor: pointer;
     padding-top: 15px;
@@ -169,8 +169,7 @@ header > a {
 .contactForm {
   width: 80%;
   margin: 0 auto;
-  text-align: center;
-  margin-top: 50px;
+  text-align: justify;
 }
 
 .spanForm {
