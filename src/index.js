@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import WebFont from 'webfontloader';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './style/main.css';
+
+WebFont.load({
+  google: {
+    families: ['Poppins']
+  }
+});
 
 ReactDOM.render(
   <BrowserRouter>

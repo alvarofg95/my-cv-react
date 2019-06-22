@@ -7,10 +7,11 @@ import Chatbot from './pages/Chatbot';
 
 const App = () => (
   <div>
+    <Header />
     <Switch>
       <Route exact path="/" render={() => <Curriculum />} />
       <Route exact path="/contacto" render={() => <Contact />} />
-      <Route exact path="/chatbot" render={() => <Chatbot />} />
+      <Route exact path="/chatbot" render={() => <Chatbot />} />s
     </Switch>
   </div>
 );

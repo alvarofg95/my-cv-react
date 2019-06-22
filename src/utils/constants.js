@@ -75,16 +75,19 @@ export const EXPERIENCE_ENGLISH = [
 export const EDUCATION_SPANISH = [
   {
     school: 'IES Azarquiel (Toledo)',
+    title: 'Desarrollo de Aplicaciones Multiplataforma',
     duration: 'Octubre 2013 - Junio 2016',
     slug: 'http://www.ies-azarquiel.es/'
   },
   {
     school: 'IES Carlos III (Toledo)',
+    title: 'Bachillerato de Ciencias Tecnológicas',
     duration: 'Septiembre 2011 - Septiembre 2013',
     slug: 'http://ies-carlos3.centros.castillalamancha.es/'
   },
   {
     school: 'San Juan Bautista (Toledo)',
+    title: 'Educación Secundaria Obligatoria',
     duration: 'Septiembre 2006 - Junio 2011',
     slug: 'http://www.colegiotavera.com/'
   }

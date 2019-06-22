@@ -1,17 +1,17 @@
 import React from 'react';
-import { EDUCATION_SPANISH, EDUCATION_ENGLISH } from '../utils/constants';
+import { EDUCATION_SPANISH } from '../utils/constants';
 
 export default ({ language }) => {
-  const education = language === 'spanish' ? EDUCATION_SPANISH : EDUCATION_ENGLISH;
   return (
     <div>
       <h3>Educación</h3>
-      {education.map((item, i) => (
+      {EDUCATION_SPANISH.map((item, i) => (
         <div key={`education${i}`}>
           <a href={item.slug} target="blank" className="itemName">
             <b>{item.school}</b>
           </a>
-          <h6>{item.duration}</h6>
+          <p className="itemDuration">{item.duration}</p>
+          <p>{item.title}</p>
         </div>
       ))}
     </div>

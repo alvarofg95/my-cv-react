@@ -1,5 +1,44 @@
+header {
+  text-align: center;
+  height: 50px;
+}
+
+header > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 25px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.container {
+  display: inline-flex;
+  width: 90%;
+  padding: 0px 5%;
+  font-family: 'Poppins';
+}
+
+.leftPart {
+  width: 25%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.rightPart {
+  width: 70%;
+}
+
 .itemName {
   color: #000;
+}
+
+.itemDuration {
+  font-size: 10px;
+}
+
+.profileImg {
+  width: 85%;
+  border-radius: 100%;
 }
 
 .tag {
@@ -25,11 +64,14 @@
 }
 
 .scrollDiv {
-  height: 600px;
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.location {
+  display: inline-flex;
 }
 
 ::-webkit-scrollbar {

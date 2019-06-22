@@ -12,7 +12,7 @@ export default ({ language }) => {
         <a href={item.slug} target="blank" className="itemName">
           <b>{item.company}</b>
         </a>
-        <h6>{item.duration}</h6>
+        <p className="itemDuration">{item.duration}</p>
         {item.technologies.map((tech, i) => (
           <Tag key={`tag${i}`} tagName={tech} />
         ))}
