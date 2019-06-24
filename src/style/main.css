@@ -11,7 +11,7 @@ h1 {
   text-align: center;
 }
 
-header>a {
+header > a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0px 25px;
@@ -39,6 +39,28 @@ header>a {
   color: #000;
 }
 
+.spanName {
+  display: inline-flex;
+}
+
+.spanName > img {
+  margin-left: 10px;
+}
+
+.viewCompanyInfo {
+  cursor: pointer;
+}
+
+.projectDescription {
+  font-size: 13px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.projectName {
+  font-size: 13px;
+}
+
 .itemDuration {
   font-size: 10px;
 }
@@ -60,6 +82,7 @@ header>a {
   margin: 0 10px 10px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
+  cursor: context-menu;
 }
 
 .divider {
