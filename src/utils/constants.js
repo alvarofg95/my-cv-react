@@ -187,14 +187,20 @@ export const CURRENT_VERSION = 'v1.0';
 export const PROJECTS = [
   {
     title: 'CHATBOT',
-    link: 'https://dialogflowfront-alvarofg95.herokuapp.com/'
+    link: 'https://dialogflowfront-alvarofg95.herokuapp.com/',
+    background: '#b0e2f0',
+    color: '#000'
   },
   {
     title: 'CONTADOR DE PALABRAS',
-    link: 'https://contador-de-palabras.netlify.com/'
+    link: 'https://contadordepalabras.netlify.com/',
+    background: '#FFF',
+    color: '#000'
   },
   {
     title: 'HORA DE DORMIR',
-    link: 'https://hora-de-dormir.netlify.com/'
+    link: 'https://hora-de-dormir.netlify.com/',
+    background: '#322f3d',
+    color: '#FFF'
   }
 ];

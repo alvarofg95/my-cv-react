@@ -2,14 +2,21 @@ import React from 'react';
 import { PROJECTS } from '../utils/constants';
 
 export default () => (
-    <div id="projectsContainer">
-        <h1>Mis Proyectos</h1>
+  <div id="projectsContainer">
+    <h1>Mis Proyectos</h1>
+    <div className="projectCanvas">
+      {PROJECTS.map(project => (
         <div>
-            {PROJECTS.map(project => (
-                <div>
-                    <a href={project.link} target="blank">{project.title}</a>
-                </div>
-            ))}
+          <a
+            href={project.link}
+            target="blank"
+            className="projectItem"
+            style={{ backgroundColor: project.background, color: project.color }}
+          >
+            {project.title}
+          </a>
         </div>
+      ))}
     </div>
+  </div>
 );

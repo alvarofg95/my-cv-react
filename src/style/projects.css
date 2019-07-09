@@ -1,0 +1,16 @@
+.projectsContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projectCanvas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.projectItem {
+  padding: 25px;
+  border: 1px solid;
+  text-decoration: none;
+}
