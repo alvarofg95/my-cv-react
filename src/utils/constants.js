@@ -182,7 +182,7 @@ export const LANGUAGES_ENGLISH = [
   }
 ];
 
-export const CURRENT_VERSION = 'v1.0';
+export const CURRENT_VERSION = 'v2.0';
 
 export const PROJECTS = [
   {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NOMBRE, LOCATION_SPANISH } from '../utils/constants';
+import { NOMBRE, LOCATION_SPANISH, CURRENT_VERSION } from '../utils/constants';
 import Icon from '../components/Icon';
 
 export default ({ language }) => {
@@ -25,6 +25,7 @@ export default ({ language }) => {
           />
         </li>
       </ul>
+      <span>{CURRENT_VERSION}</span>
     </div>
   );
 };

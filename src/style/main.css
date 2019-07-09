@@ -11,7 +11,10 @@ h1 {
   text-align: center;
 }
 
-h3, h5, p, ul {
+h3,
+h5,
+p,
+ul {
   cursor: default;
 }
 
@@ -21,6 +24,7 @@ header > a {
   padding: 0px 25px;
   display: inline-block;
   margin-top: 10px;
+  color: #000;
 }
 
 .container {
@@ -130,7 +134,32 @@ header > a {
   margin: 0 auto;
 }
 
+.iconMenu,
+.menuDiv {
+  display: none;
+}
+
 @media (max-width: 575.98px) {
+  .desktopMenu {
+    display: none;
+  }
+  .iconMenu {
+    display: block;
+    margin-left: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .menuDiv {
+    display: inline-grid;
+    margin-left: 50px;
+  }
+
+  .menuDiv > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+  }
+
   .container {
     display: block;
     height: auto;
