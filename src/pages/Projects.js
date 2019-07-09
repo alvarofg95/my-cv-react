@@ -5,8 +5,8 @@ export default () => (
   <div id="projectsContainer">
     <h1>Mis Proyectos</h1>
     <div className="projectCanvas">
-      {PROJECTS.map(project => (
-        <div>
+      {PROJECTS.map((project, i) => (
+        <div key={`project_${i}`}>
           <a
             href={project.link}
             target="blank"
