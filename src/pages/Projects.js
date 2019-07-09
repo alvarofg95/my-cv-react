@@ -3,7 +3,7 @@ import { PROJECTS } from '../utils/constants';
 
 export default () => (
     <div id="projectsContainer">
-        <h1>Proyectos personales</h1>
+        <h1>Mis Proyectos</h1>
         <div>
             {PROJECTS.map(project => (
                 <div>

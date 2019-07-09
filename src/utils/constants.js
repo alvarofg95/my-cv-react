@@ -8,7 +8,14 @@ export const EXPERIENCE_SPANISH = [
     company: 'Serbatic',
     duration: 'Enero 2019 - Actualidad',
     technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
-    slug: 'http://www.serbatic.es/'
+    slug: 'http://www.serbatic.es/',
+    projects: [
+      {
+        name: 'Chatbot AXA',
+        description:
+          'Desarrollo de un componente para crear flujos de Chatbot con una herramienta basada en Blockly de Google'
+      }
+    ]
   },
   {
     company: 'BinPar Team Quality',
@@ -17,7 +24,8 @@ export const EXPERIENCE_SPANISH = [
       {
         slug: 'http://www.joyeriatequiero.com/',
         name: 'JOYERIAS TQ',
-        description: 'Desarrollo del Back-End de un conjunto de joyerías. Venta, gestión, registro de productos.'
+        description:
+          'Desarrollo del Back-End de un conjunto de joyerías. Venta, gestión, registro de productos.'
       },
       {
         slug: 'https://www.art-madrid.com/',
@@ -42,7 +50,7 @@ export const EXPERIENCE_SPANISH = [
         name: 'AXON',
         description:
           'Desarrollo de aplicación web dedicada de la venta de productos y libros de medicina.'
-      },
+      }
     ],
     technologies: [
       'ASP.NET',

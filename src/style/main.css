@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+h3, h5, p, ul {
+  cursor: default;
+}
+
 header > a {
   text-decoration: none;
   text-transform: uppercase;
@@ -63,6 +67,7 @@ header > a {
 
 .itemDuration {
   font-size: 10px;
+  cursor: default;
 }
 
 .profileImg {
@@ -102,6 +107,7 @@ header > a {
 
 .location {
   display: inline-flex;
+  cursor: default;
 }
 
 ::-webkit-scrollbar {
@@ -112,6 +118,16 @@ header > a {
 .align-footer {
   padding: 35px;
   text-align: right;
+}
+
+.bannerMobile {
+  display: none;
+  margin: 0 auto;
+}
+
+.bannerComputer {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 575.98px) {
@@ -152,14 +168,27 @@ header > a {
   .flag {
     cursor: pointer;
     padding-top: 15px;
+    float: right;
   }
 }
 
-@media (min-width: 767.98px) {
-  .flag {
-    cursor: pointer;
-    padding-top: 15px;
-    float: right;
+@media (max-width: 700px) {
+  .bannerMobile {
+    display: block;
+  }
+
+  .bannerComputer {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .bannerMobile {
+    display: block;
+  }
+
+  .bannerComputer {
+    display: none;
   }
 }
 

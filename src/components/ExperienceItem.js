@@ -27,11 +27,11 @@ class ExperienceItem extends Component {
           </a>
           {item && item.projects && item.projects.length ? (
             <Icon
-              small
+              width={15}
               src={
                 showInformation
-                  ? require('../static/img/view.svg')
-                  : require('../static/img/eye.svg')
+                  ? require('../static/img/up-arrow.svg')
+                  : require('../static/img/down-arrow.svg')
               }
               title={
                 showInformation
@@ -52,8 +52,8 @@ class ExperienceItem extends Component {
         ) : null}
         {showInformation && item.projects && item.projects.length ? (
           <ul>
-            {item.projects.map(project => (
-              <li>
+            {item.projects.map((project, i) => (
+              <li key={`project_${i}`}>
                 <b className="projectName">{project.name}</b>
                 <p className="projectDescription">{project.description}</p>
               </li>
