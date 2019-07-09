@@ -8,7 +8,7 @@ export default ({ language }) => {
       {EDUCATION_SPANISH.map((item, i) => (
         <div key={`education${i}`}>
           <a href={item.slug} target="blank" className="itemName">
-            <b>{item.school}</b>
+            <b>{item.school}</b> ({item.location})
           </a>
           <p className="itemDuration">{item.duration}</p>
           <p>{item.title}</p>

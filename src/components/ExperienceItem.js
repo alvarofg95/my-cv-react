@@ -23,7 +23,7 @@ class ExperienceItem extends Component {
       <div>
         <span className="spanName">
           <a href={item.slug} target="blank" className="itemName" title={`Ir a ${item.company}`}>
-            <b>{item.company}</b>
+            <b>{item.company}</b> ({item.location})
           </a>
           {item && item.projects && item.projects.length ? (
             <Icon

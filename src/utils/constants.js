@@ -6,6 +6,7 @@ export const LOCATION_ENGLISH = 'Madrid, Spain';
 export const EXPERIENCE_SPANISH = [
   {
     company: 'Serbatic',
+    location: 'Madrid',
     duration: 'Enero 2019 - Actualidad',
     technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
     slug: 'http://www.serbatic.es/',
@@ -19,6 +20,7 @@ export const EXPERIENCE_SPANISH = [
   },
   {
     company: 'BinPar Team Quality',
+    location: 'Madrid',
     duration: 'Abril 2017 - Diciembre 2018',
     projects: [
       {
@@ -71,6 +73,7 @@ export const EXPERIENCE_SPANISH = [
   },
   {
     company: 'Miotek Factory',
+    location: 'Madrid',
     duration: 'Octubre 2016 - Abril 2017',
     projects: [
       {
@@ -125,19 +128,22 @@ export const EXPERIENCE_ENGLISH = [
 
 export const EDUCATION_SPANISH = [
   {
-    school: 'IES Azarquiel (Toledo)',
+    school: 'IES Azarquiel',
+    location: 'Toledo',
     title: 'Desarrollo de Aplicaciones Multiplataforma',
     duration: 'Octubre 2013 - Junio 2016',
     slug: 'http://www.ies-azarquiel.es/'
   },
   {
-    school: 'IES Carlos III (Toledo)',
+    school: 'IES Carlos III',
+    location: 'Toledo',
     title: 'Bachillerato de Ciencias Tecnológicas',
     duration: 'Septiembre 2011 - Septiembre 2013',
     slug: 'http://ies-carlos3.centros.castillalamancha.es/'
   },
   {
-    school: 'San Juan Bautista (Toledo)',
+    school: 'San Juan Bautista',
+    location: 'Toledo',
     title: 'Educación Secundaria Obligatoria',
     duration: 'Septiembre 2006 - Junio 2011',
     slug: 'http://www.colegiotavera.com/'
