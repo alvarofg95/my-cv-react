@@ -20,7 +20,6 @@ class Menu extends Component {
   }
 
   changeLanguage() {
-    console.log({ props: this.props });
     this.setState(
       prevState => ({
         language: prevState.language === 'english' ? 'spanish' : 'english'

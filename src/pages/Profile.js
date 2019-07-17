@@ -3,9 +3,7 @@ import { NOMBRE, CURRENT_VERSION } from '../utils/constants';
 import Icon from '../components/Icon';
 import { withTranslation } from 'react-i18next';
 
-const Profile = props => {
-  const { t } = props;
-  console.log('render PROFILE', t('profile.location'));
+const Profile = ({ t }) => {
   return (
     <div className="leftPart text-center">
       <img

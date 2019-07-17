@@ -6,9 +6,7 @@ import Curriculum from './pages/Curriculum';
 import Projects from './pages/Projects';
 import Menu from './components/Menu';
 
-const App = props => {
-  const { t } = props;
-  console.log('render APP', t('profile.location'));
+const App = () => {
   return (
     <div>
       <Menu />
