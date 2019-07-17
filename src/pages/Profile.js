@@ -1,8 +1,11 @@
 import React from 'react';
-import { NOMBRE, LOCATION_SPANISH, CURRENT_VERSION } from '../utils/constants';
+import { NOMBRE, CURRENT_VERSION } from '../utils/constants';
 import Icon from '../components/Icon';
+import { withTranslation } from 'react-i18next';
 
-export default ({ language }) => {
+const Profile = props => {
+  const { t } = props;
+  console.log('render PROFILE', t('profile.location'));
   return (
     <div className="leftPart text-center">
       <img
@@ -16,7 +19,7 @@ export default ({ language }) => {
       <ul className="profile-list">
         <li className="location">
           <Icon small src={require('../static/img/map-pin.svg')} />
-          <span className="padding-left-5">{LOCATION_SPANISH}</span>
+          <span className="padding-left-5">{t('profile.location')}</span>
         </li>
         <li className="padding-top-20">
           <Icon
@@ -29,3 +32,5 @@ export default ({ language }) => {
     </div>
   );
 };
+
+export default withTranslation()(Profile);

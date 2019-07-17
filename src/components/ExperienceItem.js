@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Tag from './Tag';
 import Icon from './Icon';
+import { withTranslation } from 'react-i18next';
 
 class ExperienceItem extends Component {
   constructor(props) {
@@ -17,12 +18,12 @@ class ExperienceItem extends Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { item, t } = this.props;
     const { showInformation } = this.state;
     return (
       <div>
         <span className="spanName">
-          <a href={item.slug} target="blank" className="itemName" title={`Ir a ${item.company}`}>
+          <a href={item.slug} target="blank" className="itemName" title={`${t('goTo')} ${item.company}`}>
             <b>{item.company}</b> ({item.location})
           </a>
           {item && item.projects && item.projects.length ? (
@@ -65,4 +66,4 @@ class ExperienceItem extends Component {
   }
 }
 
-export default ExperienceItem;
+export default withTranslation()(ExperienceItem);

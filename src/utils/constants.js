@@ -1,7 +1,5 @@
 export const NOMBRE = 'Álvaro Fernández García';
 export const EMAIL = 'fernandezgarcia.alvaro@outlook.com';
-export const LOCATION_SPANISH = 'Madrid, España';
-export const LOCATION_ENGLISH = 'Madrid, Spain';
 
 export const EXPERIENCE_SPANISH = [
   {
@@ -94,12 +92,14 @@ export const EXPERIENCE_SPANISH = [
 export const EXPERIENCE_ENGLISH = [
   {
     company: 'Serbatic',
+    location: 'Madrid',
     duration: 'January 2019 - Actuality',
     technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
     slug: 'http://www.serbatic.es/'
   },
   {
     company: 'BinPar Team Quality',
+    location: 'Madrid',
     duration: 'April 2017 - December 2018',
     technologies: [
       'ASP.NET',
@@ -120,6 +120,7 @@ export const EXPERIENCE_ENGLISH = [
   },
   {
     company: 'Miotek Factory',
+    location: 'Madrid',
     duration: 'October 2016 - April 2017',
     technologies: ['ASP.NET', 'SQL', 'HTML5', 'CSS'],
     slug: 'https://www.miotek.es/'
@@ -151,17 +152,23 @@ export const EDUCATION_SPANISH = [
 ];
 export const EDUCATION_ENGLISH = [
   {
-    school: 'IES Azarquiel (Toledo)',
+    school: 'IES Azarquiel',
+    location: 'Toledo',
+    title: 'Cross-platform application development',
     duration: 'October 2013 - June 2016',
     slug: 'http://www.ies-azarquiel.es/'
   },
   {
-    school: 'IES Carlos III (Toledo)',
+    school: 'IES Carlos III',
+    location: 'Toledo',
+    title: 'Bachelor of technological Sciences',
     duration: 'September 2011 - September 2013',
     slug: 'http://ies-carlos3.centros.castillalamancha.es/'
   },
   {
-    school: 'San Juan Bautista (Toledo)',
+    school: 'San Juan Bautista',
+    location: 'Toledo',
+    title: 'Compulsory secondary education',
     duration: 'September 2006 - June 2011',
     slug: 'http://www.colegiotavera.com/'
   }

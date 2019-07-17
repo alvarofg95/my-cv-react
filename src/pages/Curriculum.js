@@ -8,7 +8,7 @@ import Languages from '../pages/Languages';
 const SCREEN_HEIGHT = window.innerHeight;
 
 export default () => (
-  <div className="container" style={{ height: SCREEN_HEIGHT - (SCREEN_HEIGHT*0.15) }}>
+  <div className="container" style={{ height: SCREEN_HEIGHT - SCREEN_HEIGHT * 0.15 }}>
     <Profile />
     <div className="rightPart scrollDiv">
       <Experience />
