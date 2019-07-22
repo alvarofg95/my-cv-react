@@ -100,7 +100,7 @@ export const EXPERIENCE_ENGLISH = [
         description:
           'Development of a component for build Chatbot workflows with a tool based on Google Blockly'
       }
-    ]
+    ],
     technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
     slug: 'http://www.serbatic.es/'
   },
