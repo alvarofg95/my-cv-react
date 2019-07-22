@@ -8,7 +8,8 @@ export default {
     contact: 'Contact'
   },
   experience: {
-    title: 'Experience'
+    title: 'Experience',
+    developed: 'Developed projects in'
   },
   goTo: 'Go to',
   education: {

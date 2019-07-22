@@ -49,7 +49,7 @@ class ExperienceItem extends Component {
           <Tag key={`tag${i}`} tagName={tech} />
         ))}
         {showInformation && item.projects && item.projects.length ? (
-          <p>Proyectos desarrollados en {item.company}</p>
+          <p>{t('experience.developed')} {item.company}</p>
         ) : null}
         {showInformation && item.projects && item.projects.length ? (
           <ul>
