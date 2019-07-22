@@ -94,6 +94,13 @@ export const EXPERIENCE_ENGLISH = [
     company: 'Serbatic',
     location: 'Madrid',
     duration: 'January 2019 - Actuality',
+    projects: [
+      {
+        name: 'Chatbot AXA',
+        description:
+          'Development of a component for build Chatbot workflows with a tool based on Google Blockly'
+      }
+    ]
     technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
     slug: 'http://www.serbatic.es/'
   },
@@ -101,6 +108,38 @@ export const EXPERIENCE_ENGLISH = [
     company: 'BinPar Team Quality',
     location: 'Madrid',
     duration: 'April 2017 - December 2018',
+    projects: [
+      {
+        slug: 'http://www.joyeriatequiero.com/',
+        name: 'JOYERIAS TQ',
+        description:
+          'Development of the Back-End of a set of jewelry. Sales, management, product registration.'
+      },
+      {
+        slug: 'https://www.art-madrid.com/',
+        name: 'ART-MADRID',
+        description:
+          'Development of the Back-End of a gallery of art and participation in the development of the front of it.'
+      },
+      {
+        slug: 'https://www.galeriabat.com/es',
+        name: 'Galería BAT',
+        description:
+          'Participation in the development of the Back-End of an art gallery and in the development of the front of it.'
+      },
+      {
+        slug: 'https://edinumen.es/',
+        name: 'EDINUMEN',
+        description:
+          'Development of web application and mobile application for reading electronic books online and do exercises.'
+      },
+      {
+        slug: 'https://axon.es/',
+        name: 'AXON',
+        description:
+          'Development of dedicated web application from the sale of products and books of medicine.'
+      }
+    ],
     technologies: [
       'ASP.NET',
       'SQL',
@@ -122,6 +161,18 @@ export const EXPERIENCE_ENGLISH = [
     company: 'Miotek Factory',
     location: 'Madrid',
     duration: 'October 2016 - April 2017',
+    projects: [
+      {
+        slug: 'https://www.ipmicro.es/',
+        name: 'Back-End IPMICRO',
+        description: 'Development of podiatry clinic Back-End.'
+      },
+      {
+        name: 'SPORT REVIEW',
+        description:
+          'Development of a web application on a sports social network and an extractor for news of more than 100 media development.'
+      }
+    ],
     technologies: ['ASP.NET', 'SQL', 'HTML5', 'CSS'],
     slug: 'https://www.miotek.es/'
   }
