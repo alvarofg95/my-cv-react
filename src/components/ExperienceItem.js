@@ -38,8 +38,8 @@ class ExperienceItem extends Component {
               width={15}
               src={
                 showInformation
-                  ? require('../static/img/up-arrow.svg')
-                  : require('../static/img/down-arrow.svg')
+                  ? require('../assets/img/up-arrow.svg')
+                  : require('../assets/img/down-arrow.svg')
               }
               title={
                 showInformation

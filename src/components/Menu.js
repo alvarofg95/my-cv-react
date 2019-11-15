@@ -41,8 +41,8 @@ class Menu extends Component {
           className="iconFlat"
           src={
             this.state.language === 'spanish'
-              ? require('../static/img/spain.svg')
-              : require('../static/img/united-kingdom.svg')
+              ? require('../assets/img/spain.svg')
+              : require('../assets/img/united-kingdom.svg')
           }
           small
           title={this.state.language === 'spanish' ? 'Cambiar a inglés' : 'Change to Spanish'}
@@ -50,7 +50,7 @@ class Menu extends Component {
         />
         <Icon
           className="iconMenu"
-          src={require('../static/img/menu.svg')}
+          src={require('../assets/img/menu.svg')}
           small
           onClick={this.openMenu}
         />
