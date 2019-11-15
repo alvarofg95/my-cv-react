@@ -7,7 +7,7 @@ const Profile = ({ t }) => {
   return (
     <div className="leftPart text-center">
       <img
-        src={require('../static/img/Álvaro Fernández García.png')}
+        src={require('../static/img/alvarofg95.png')}
         className="profileImg"
         alt={NOMBRE}
       />
