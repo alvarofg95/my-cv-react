@@ -14,16 +14,23 @@ class ExperienceItem extends Component {
   }
 
   handleInfo() {
-    this.setState(prevState => ({ showInformation: !prevState.showInformation }));
+    this.setState(prevState => ({
+      showInformation: !prevState.showInformation
+    }));
   }
 
   render() {
     const { item, t } = this.props;
     const { showInformation } = this.state;
     return (
-      <div>
+      <div className="divItem">
         <span className="spanName">
-          <a href={item.slug} target="blank" className="itemName" title={`${t('goTo')} ${item.company}`}>
+          <a
+            href={item.slug}
+            target="blank"
+            className="itemName"
+            title={`${t('goTo')} ${item.company}`}
+          >
             <b>{item.company}</b> ({item.location})
           </a>
           {item && item.projects && item.projects.length ? (
@@ -49,7 +56,9 @@ class ExperienceItem extends Component {
           <Tag key={`tag${i}`} tagName={tech} />
         ))}
         {showInformation && item.projects && item.projects.length ? (
-          <p>{t('experience.developed')} {item.company}</p>
+          <p>
+            {t('experience.developed')} {item.company}
+          </p>
         ) : null}
         {showInformation && item.projects && item.projects.length ? (
           <ul>

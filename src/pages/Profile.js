@@ -1,5 +1,5 @@
 import React from 'react';
-import { NOMBRE, CURRENT_VERSION } from '../utils/constants';
+import { NOMBRE } from '../utils/constants';
 import Icon from '../components/Icon';
 import { withTranslation } from 'react-i18next';
 
@@ -13,7 +13,7 @@ const Profile = ({ t }) => {
       />
       <h1 hidden>{NOMBRE}</h1>
       <h3 className="margin-top-20">{NOMBRE}</h3>
-      <h5>Full Stack Javascript</h5>
+      <h4>Full Stack Javascript</h4>
       <ul className="profile-list">
         <li className="location">
           <Icon small src={require('../static/img/map-pin.svg')} />
@@ -21,12 +21,12 @@ const Profile = ({ t }) => {
         </li>
         <li className="padding-top-20">
           <Icon
+            title={t('profile.linkedIn')}
             src={require('../static/img/linkedin.svg')}
             link="https://www.linkedin.com/in/alvarofg95"
           />
         </li>
       </ul>
-      <span>{CURRENT_VERSION}</span>
     </div>
   );
 };

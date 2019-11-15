@@ -6,13 +6,32 @@ export const EXPERIENCE_SPANISH = [
     company: 'Serbatic',
     location: 'Madrid',
     duration: 'Enero 2019 - Actualidad',
-    technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
+    technologies: [
+      'ReactJS',
+      'Redux',
+      'NodeJS',
+      'Loopback',
+      'DialogFlow',
+      'Azure Bot Service',
+      'Bootstrap'
+    ],
     slug: 'http://www.serbatic.es/',
     projects: [
       {
         name: 'Chatbot AXA',
         description:
           'Desarrollo de un componente para crear flujos de Chatbot con una herramienta basada en Blockly de Google'
+      },
+      {
+        name: 'Movistar Money Colombia',
+        description:
+          'Desarrollo y mantenimiento de una Aplicación Web para contratar créditos en Colombia',
+        slug: 'https://www.movistar.co/money/'
+      },
+      {
+        name: 'Movistar FinTer',
+        description:
+          'Desarrollo y mantenimiento de una Aplicación Web para financiar terminales desde las tiendas de Movistar en Colombia'
       }
     ]
   },
@@ -99,9 +118,27 @@ export const EXPERIENCE_ENGLISH = [
         name: 'Chatbot AXA',
         description:
           'Development of a component for build Chatbot workflows with a tool based on Google Blockly'
+      },
+      {
+        name: 'Movistar Money Colombia',
+        description: 'Development and maintenance of a Web Application to hire credits in Colombia',
+        slug: 'https://www.movistar.co/money/'
+      },
+      {
+        name: 'Movistar FinTer',
+        description:
+          'Development and maintenance of a Web Application to finance terminals in Movistar Colombia stores'
       }
     ],
-    technologies: ['NodeJS', 'Loopback', 'DialogFlow', 'Azure Bot Service', 'Bootstrap'],
+    technologies: [
+      'ReactJS',
+      'Redux',
+      'NodeJS',
+      'Loopback',
+      'DialogFlow',
+      'Azure Bot Service',
+      'Bootstrap'
+    ],
     slug: 'http://www.serbatic.es/'
   },
   {

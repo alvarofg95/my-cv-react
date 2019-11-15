@@ -1,6 +1,7 @@
 export default {
   profile: {
-    location: 'Madrid, España'
+    location: 'Madrid, España',
+    linkedIn: 'Ir a LinkedIn'
   },
   menu: {
     home: 'Inicio',

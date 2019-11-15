@@ -10,7 +10,7 @@ const Education = ({ t }) => {
     <div>
       <h3>{t('education.title')}</h3>
       {translatedEducation.map((item, i) => (
-        <div key={`education${i}`}>
+        <div key={`education${i}`} className="divItem">
           <a
             href={item.slug}
             target="blank"

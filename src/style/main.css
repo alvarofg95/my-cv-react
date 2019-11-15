@@ -37,10 +37,15 @@ header > a {
   width: 25%;
   margin-right: 5%;
   text-align: center;
+  padding-top: 7rem;
 }
 
 .rightPart {
   width: 70%;
+}
+
+.divItem {
+  padding-bottom: 2rem;
 }
 
 .itemName {
@@ -144,7 +149,7 @@ header > a {
   right: 15px;
   cursor: pointer;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 750px) {
   .desktopMenu {
     display: none;
   }
