@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NOMBRE } from '../utils/constants';
 
-export default ({
+const Icon = ({
   width,
   small = false,
   src,
@@ -31,3 +32,15 @@ export default ({
       onClick={onClick}
     />
   );
+
+Icon.propTypes = {
+  width: PropTypes.number,
+  small: PropTypes.bool,
+  src: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  className: PropTypes.string,
+  title: PropTypes.string,
+  onClick: PropTypes.func
+};
+
+export default Icon;

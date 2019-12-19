@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Icon from './Icon';
 
-export default ({ language, onChange }) => (
+const Language = ({ language, onChange }) => (
   <Icon
     className="flag"
     src={language === 'spanish' ? '/img/spain.svg' : '/img/united-kingdom.svg'}
@@ -10,3 +11,10 @@ export default ({ language, onChange }) => (
     onClick={() => onChange(language)}
   />
 );
+
+Language.propTypes = {
+  language: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired
+};
+
+export default Language;

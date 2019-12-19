@@ -30,12 +30,13 @@ class Menu extends Component {
 
   render() {
     const { t } = this.props;
+    const { language, open } = this.state;
     return (
       <div>
         <header className="desktopMenu">
           <Link to="/">{t('menu.home')}</Link>
           <Link to="/proyectos">{t('menu.projects')}</Link>
-          <Link to="/contacto">{t('menu.contact')}</Link>
+          {/* <Link to="/contacto">{t('menu.contact')}</Link> */}
         </header>
         <Icon
           className="iconFlat"
@@ -45,7 +46,7 @@ class Menu extends Component {
               : require('../assets/img/united-kingdom.svg')
           }
           small
-          title={this.state.language === 'spanish' ? 'Cambiar a inglés' : 'Change to Spanish'}
+          title={language === 'spanish' ? 'Cambiar a inglés' : 'Change to Spanish'}
           onClick={this.changeLanguage}
         />
         <Icon
@@ -54,11 +55,11 @@ class Menu extends Component {
           small
           onClick={this.openMenu}
         />
-        {this.state.open ? (
+        {open ? (
           <div className="menuDiv">
             <Link to="/">{t('menu.home')}</Link>
             <Link to="/proyectos">{t('menu.projects')}</Link>
-            <Link to="/contacto">{t('menu.contact')}</Link>
+            {/* <Link to="/contacto">{t('menu.contact')}</Link> */}
           </div>
         ) : null}
       </div>

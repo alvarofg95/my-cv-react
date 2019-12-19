@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Tag from './Tag';
 import Icon from './Icon';
 import { withTranslation } from 'react-i18next';
@@ -74,5 +75,9 @@ class ExperienceItem extends Component {
     );
   }
 }
+
+ExperienceItem.propTypes = {
+  item: PropTypes.object.isRequired
+};
 
 export default withTranslation()(ExperienceItem);
