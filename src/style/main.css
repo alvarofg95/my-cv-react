@@ -176,6 +176,7 @@ header > a {
   }
   .leftPart {
     width: 100%;
+    padding-top: 3rem;
   }
   .rightPart {
     width: 100%;
