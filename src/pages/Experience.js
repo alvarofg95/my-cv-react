@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import { EXPERIENCE_SPANISH, EXPERIENCE_ENGLISH } from '../utils/constants';
-import ExperienceItem from '../components/ExperienceItem';
 import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import i18next from 'i18next';
+import { EXPERIENCE_SPANISH, EXPERIENCE_ENGLISH } from '../utils/constants';
+import ExperienceItem from '../components/ExperienceItem';
 
 const Experience = ({ t }) => {
   const translatedExperience =

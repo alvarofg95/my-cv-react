@@ -1,16 +1,12 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import { NOMBRE } from '../utils/constants';
 import Icon from '../components/Icon';
-import { withTranslation } from 'react-i18next';
 
 const Profile = ({ t }) => {
   return (
     <div className="leftPart text-center">
-      <img
-        src={require('../assets/img/alvarofg95.png')}
-        className="profileImg"
-        alt={NOMBRE}
-      />
+      <img src={require('../assets/img/alvarofg95.png')} className="profileImg" alt={NOMBRE} />
       <h3 className="margin-top-20">{NOMBRE}</h3>
       <h4>Full Stack Javascript</h4>
       <ul className="profile-list">

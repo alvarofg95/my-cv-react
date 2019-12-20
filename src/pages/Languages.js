@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import { LANGUAGES_SPANISH, LANGUAGES_ENGLISH } from '../utils/constants';
 import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import i18next from 'i18next';
+import { LANGUAGES_SPANISH, LANGUAGES_ENGLISH } from '../utils/constants';
 
 const Languages = ({ t }) => {
   const translatedLanguages =

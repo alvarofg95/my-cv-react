@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import Tag from './Tag';
 import Icon from './Icon';
-import { withTranslation } from 'react-i18next';
 
 class ExperienceItem extends Component {
   constructor(props) {

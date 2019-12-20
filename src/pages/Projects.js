@@ -1,6 +1,6 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import { PROJECTS } from '../utils/constants';
-import { withTranslation } from 'react-i18next';
 
 const Projects = ({ t }) => (
   <div id="projectsContainer">

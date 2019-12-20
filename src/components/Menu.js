@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { withTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import i18next from 'i18next';
 import Icon from './Icon';
 

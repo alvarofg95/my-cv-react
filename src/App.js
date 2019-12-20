@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import { withTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import Contact from './pages/Contact';
 import Curriculum from './pages/Curriculum';
 import Projects from './pages/Projects';
