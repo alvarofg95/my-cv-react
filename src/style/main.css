@@ -161,7 +161,7 @@ header > a {
   }
   .menuDiv {
     display: inline-grid;
-    margin-left: 50px;
+    margin-left: 4rem;
   }
 
   .menuDiv > a {
