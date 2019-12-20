@@ -21,20 +21,18 @@ class ExperienceItem extends Component {
   }
 
   render() {
-    const { item, t } = this.props;
+    const {
+      item: { slug, company, location, duration, projects, technologies },
+      t
+    } = this.props;
     const { showInformation } = this.state;
     return (
       <div className="divItem">
         <span className="spanName">
-          <a
-            href={item.slug}
-            target="blank"
-            className="itemName"
-            title={`${t('goTo')} ${item.company}`}
-          >
-            <b>{item.company}</b> ({item.location})
+          <a href={slug} target="blank" className="itemName" title={`${t('goTo')} ${company}`}>
+            <b>{company}</b> ({location})
           </a>
-          {item && item.projects && item.projects.length ? (
+          {projects && projects.length ? (
             <Icon
               width={15}
               src={
@@ -44,26 +42,24 @@ class ExperienceItem extends Component {
               }
               title={
                 showInformation
-                  ? `Cerrar información sobre ${item.company}`
-                  : `¿Qué hice en ${item.company}?`
+                  ? t('experience.close', { company })
+                  : t('experience.open', { company })
               }
               className="viewCompanyInfo"
               onClick={this.handleInfo}
             />
           ) : null}
         </span>
-        <p className="itemDuration">{item.duration}</p>
-        {item.technologies.map((tech, i) => (
-          <Tag key={`tag${i}`} tagName={tech} />
-        ))}
-        {showInformation && item.projects && item.projects.length ? (
+        <p className="itemDuration">{duration}</p>
+        {technologies && technologies.map((tech, i) => <Tag key={`tag${i}`} tagName={tech} />)}
+        {showInformation && projects && projects.length ? (
           <p>
-            {t('experience.developed')} {item.company}
+            {t('experience.developed')} {company}
           </p>
         ) : null}
-        {showInformation && item.projects && item.projects.length ? (
+        {showInformation && projects && projects.length ? (
           <ul>
-            {item.projects.map((project, i) => (
+            {projects.map((project, i) => (
               <li key={`project_${i}`}>
                 <b className="projectName">{project.name}</b>
                 <p className="projectDescription">{project.description}</p>

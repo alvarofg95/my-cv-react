@@ -10,14 +10,17 @@ export default {
   },
   experience: {
     title: 'Experience',
-    developed: 'Developed projects in'
+    developed: 'Developed projects in',
+    open: 'What did I do in {{company}}?',
+    close: 'Close information about {{company}}'
   },
   goTo: 'Go to',
   education: {
     title: 'Education'
   },
   languages: {
-    title: 'Languages'
+    title: 'Languages',
+    change: 'Change to Spanish'
   },
   projects: {
     title: 'My Projects'

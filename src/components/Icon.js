@@ -33,6 +33,13 @@ const Icon = ({
     />
   );
 
+Icon.defaultProps = {
+  small: false,
+  link: null,
+  className: null,
+  title: null
+};
+
 Icon.propTypes = {
   width: PropTypes.number,
   small: PropTypes.bool,

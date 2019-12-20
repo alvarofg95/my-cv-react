@@ -11,7 +11,6 @@ const Profile = ({ t }) => {
         className="profileImg"
         alt={NOMBRE}
       />
-      <h1 hidden>{NOMBRE}</h1>
       <h3 className="margin-top-20">{NOMBRE}</h3>
       <h4>Full Stack Javascript</h4>
       <ul className="profile-list">

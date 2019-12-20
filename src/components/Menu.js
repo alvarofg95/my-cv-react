@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import i18next from 'i18next';
@@ -32,21 +32,20 @@ class Menu extends Component {
     const { t } = this.props;
     const { language, open } = this.state;
     return (
-      <div>
+      <Fragment>
         <header className="desktopMenu">
           <Link to="/">{t('menu.home')}</Link>
           <Link to="/proyectos">{t('menu.projects')}</Link>
-          {/* <Link to="/contacto">{t('menu.contact')}</Link> */}
         </header>
         <Icon
           className="iconFlat"
           src={
-            this.state.language === 'spanish'
+            language === 'spanish'
               ? require('../assets/img/spain.svg')
               : require('../assets/img/united-kingdom.svg')
           }
           small
-          title={language === 'spanish' ? 'Cambiar a inglés' : 'Change to Spanish'}
+          title={t('languages.change')}
           onClick={this.changeLanguage}
         />
         <Icon
@@ -59,10 +58,9 @@ class Menu extends Component {
           <div className="menuDiv">
             <Link to="/">{t('menu.home')}</Link>
             <Link to="/proyectos">{t('menu.projects')}</Link>
-            {/* <Link to="/contacto">{t('menu.contact')}</Link> */}
           </div>
         ) : null}
-      </div>
+      </Fragment>
     );
   }
 }
