@@ -6,17 +6,16 @@ const Projects = ({ t }) => (
   <div id="projectsContainer">
     <h1>{t('projects.title')}</h1>
     <div className="projectCanvas">
-      {PROJECTS.map((project, i) => (
-        <div key={`project_${i}`}>
-          <a
-            href={project.link}
-            target="blank"
-            className="projectItem"
-            style={{ backgroundColor: project.background, color: project.color }}
-          >
-            {project.title}
-          </a>
-        </div>
+      {PROJECTS.map(({ link, background, color, title }, i) => (
+        <a
+          key={`project_${i}`}
+          href={link}
+          target="blank"
+          className="projectItem"
+          style={{ backgroundColor: background, color }}
+        >
+          {title}
+        </a>
       ))}
     </div>
   </div>
