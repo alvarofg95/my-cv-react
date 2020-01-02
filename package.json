@@ -1,6 +1,7 @@
 {
   "name": "my-cv-react",
-  "version": "0.2.0",
+  "version": "1.0.3",
+  "homepage" : "https://alvarofg95.netlify.com/",
   "private": true,
   "dependencies": {
     "i18next": "^17.0.6",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src/ -d lib/",
+    "build": "react-scripts build",
     "prepublish": "npm run build",
     "flow": "flow"
   },
