@@ -4,8 +4,8 @@ import routes from '../../utils/routes';
 
 export default () => (
   <Switch>
-    {routes.map(({ exact, hashPath, component }) => (
-      <Route exact={exact} path={hashPath} component={component} />
+    {routes.map(({ exact, hashPath, component, key }) => (
+      <Route key={key} exact={exact} path={hashPath} component={component} />
     ))}
   </Switch>
 );
