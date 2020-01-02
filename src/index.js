@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import WebFont from 'webfontloader';
 import { I18nextProvider } from 'react-i18next';
+import { Provider } from 'react-redux';
+import store from './redux/store/index.js';
 import i18n from './i18n';
 import App from './App';
 import { setPolyfills } from './utils/utils';
@@ -20,9 +22,11 @@ setPolyfills();
 
 ReactDOM.render(
   <I18nextProvider i18n={i18n}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </I18nextProvider>,
   document.getElementById('root')
 );

@@ -1,0 +1,2 @@
+export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+export const LOAD_APP_INFO = 'LOAD_APP_INFO';
