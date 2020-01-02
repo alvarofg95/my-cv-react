@@ -50,7 +50,6 @@ class Menu extends Component {
     const { language } = this.props;
     const newLanguage = language === 'english' ? 'spanish' : 'english';
     i18next.changeLanguage(newLanguage);
-    console.log(newLanguage);
     this.props.changeLanguageRedux(newLanguage);
   }
 
