@@ -23,8 +23,6 @@ class Menu extends Component {
       open: false
     };
     this.cookies = new Cookies();
-    this.openMenu = this.openMenu.bind(this);
-    this.changeLanguage = this.changeLanguage.bind(this);
   }
 
   componentWillMount() {
@@ -42,11 +40,11 @@ class Menu extends Component {
     }
   }
 
-  openMenu() {
+  openMenu = ()  => {
     this.setState(prevState => ({ open: !prevState.open }));
   }
 
-  changeLanguage() {
+  changeLanguage = () => {
     const { language } = this.props;
     const newLanguage = language === 'english' ? 'spanish' : 'english';
     i18next.changeLanguage(newLanguage);

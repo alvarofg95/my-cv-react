@@ -1,7 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import NetlifyForm from 'react-netlify-form';
-import CustomButton from './CustomButton';
 
 export default () => (
   <div>

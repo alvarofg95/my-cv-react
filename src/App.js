@@ -4,13 +4,11 @@ import { withTranslation } from 'react-i18next/dist/es/withTranslation';
 import Menu from './components/Menu';
 import RouterControl from './components/Router/RouterControl';
 
-const App = () => {
-  return (
-    <Fragment>
-      <Menu />
-      <RouterControl />
-    </Fragment>
-  );
-};
+const App = () => (
+  <Fragment>
+    <Menu />
+    <RouterControl />
+  </Fragment>
+);
 
 export default withRouter(withTranslation()(App));

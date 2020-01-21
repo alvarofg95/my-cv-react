@@ -5,20 +5,15 @@ import Tag from './Tag';
 import Icon from './Icon';
 
 class ExperienceItem extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showInformation: false
-    };
+  state = {
+    showInformation: false
+  };
 
-    this.handleInfo = this.handleInfo.bind(this);
-  }
-
-  handleInfo() {
+  handleInfo = () => {
     this.setState(prevState => ({
       showInformation: !prevState.showInformation
     }));
-  }
+  };
 
   render() {
     const {

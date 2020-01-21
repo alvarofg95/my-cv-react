@@ -7,13 +7,15 @@ export const EXPERIENCE_SPANISH = [
     location: 'Madrid',
     duration: 'Enero 2019 - Actualidad',
     technologies: [
+      'VueJS',
       'ReactJS',
       'Redux',
       'NodeJS',
       'Loopback',
       'DialogFlow',
       'Azure Bot Service',
-      'Bootstrap'
+      'Bootstrap',
+      'Sass'
     ],
     slug: 'http://www.serbatic.es/',
     projects: [
