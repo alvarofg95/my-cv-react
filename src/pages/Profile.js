@@ -14,11 +14,18 @@ const Profile = ({ t }) => {
           <Icon small src={require('../assets/img/map-pin.svg')} />
           <span className="padding-left-5">{t('profile.location')}</span>
         </li>
-        <li className="padding-top-20">
+        <li className="padding-top-20 socialMedia">
           <Icon
+            width={50}
             title={t('profile.linkedIn')}
             src={require('../assets/img/linkedin.svg')}
             link="https://www.linkedin.com/in/alvarofg95"
+          />
+          <Icon
+            width={50}
+            title={t('profile.github')}
+            src={require('../assets/img/github.png')}
+            link="https://github.com/alvarofg95"
           />
         </li>
       </ul>

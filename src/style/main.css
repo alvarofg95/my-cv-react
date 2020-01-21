@@ -40,6 +40,13 @@ header > a {
   padding-top: 2rem;
 }
 
+.socialMedia {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75%;
+}
+
 .rightPart {
   width: 70%;
 }

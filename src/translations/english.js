@@ -1,7 +1,8 @@
 export default {
   profile: {
     location: 'Madrid, Spain',
-    linkedIn: 'Go to LinkedIn'
+    linkedIn: 'Go to LinkedIn',
+    github: 'Go to Github'
   },
   menu: {
     home: 'Home',
