@@ -133,13 +133,15 @@ export const EXPERIENCE_ENGLISH = [
       }
     ],
     technologies: [
+      'VueJS',
       'ReactJS',
       'Redux',
       'NodeJS',
       'Loopback',
       'DialogFlow',
       'Azure Bot Service',
-      'Bootstrap'
+      'Bootstrap',
+      'Sass'
     ],
     slug: 'http://www.serbatic.es/'
   },
