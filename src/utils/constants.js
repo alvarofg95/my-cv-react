@@ -281,25 +281,33 @@ export const LANGUAGES_ENGLISH = [
   }
 ];
 
-export const CURRENT_VERSION = 'v2.0';
-
 export const PROJECTS = [
   {
     title: 'CHATBOT',
     link: 'https://dialogflowfront-alvarofg95.herokuapp.com/',
     background: '#b0e2f0',
-    color: '#000'
+    color: '#000',
+    technologies: ['ReactJS', 'NodeJS', 'DialogFlow']
   },
   {
     title: 'CONTADOR DE PALABRAS',
     link: 'https://contadordepalabras.netlify.com/',
     background: '#FFF',
-    color: '#000'
+    color: '#000',
+    technologies: ['ReactJS']
   },
   {
     title: 'HORA DE DORMIR',
     link: 'https://hora-de-dormir.netlify.com/',
     background: '#322f3d',
-    color: '#FFF'
+    color: '#FFF',
+    technologies: ['ReactJS']
+  },
+  {
+    title: 'RAPID NOTES',
+    link: 'https://rapid-notes.netlify.com/',
+    background: '#FFF',
+    color: '#000',
+    technologies: ['VueJS']
   }
 ];

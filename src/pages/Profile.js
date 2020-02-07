@@ -6,9 +6,9 @@ import Icon from '../components/Icon';
 const Profile = ({ t }) => {
   return (
     <div className="leftPart text-center">
-      <img src={require('../assets/img/alvarofg95.png')} className="profileImg" alt={NOMBRE} />
-      <h3 className="margin-top-20">{NOMBRE}</h3>
-      <h4>Full Stack Javascript</h4>
+      <img src={require('../assets/img/Alvaro Fernandez García.png')} className="profileImg" alt={NOMBRE} />
+      <h1 className="margin-top-20">{NOMBRE}</h1>
+      <h2>Full Stack Javascript</h2>
       <ul className="profile-list">
         <li className="location">
           <Icon small src={require('../assets/img/map-pin.svg')} />
