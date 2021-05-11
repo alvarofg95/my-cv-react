@@ -343,5 +343,12 @@ export const PROJECTS = [
     background: '#FFF',
     color: '#000',
     technologies: ['VueJS']
+  },
+  {
+    title: 'WEATHER',
+    link: 'https://tiempo-react.netlify.app/',
+    background: '#322f3d',
+    color: '#FFF',
+    technologies: ['ReactJS']
   }
 ];
