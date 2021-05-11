@@ -3,9 +3,26 @@ export const EMAIL = 'fernandezgarcia.alvaro@outlook.com';
 
 export const EXPERIENCE_SPANISH = [
   {
+    company: 'Novabase',
+    location: 'Madrid',
+    duration: 'Diciembre 2020 - Actualidad',
+    technologies: [
+      'ReactJS',
+      'ARC Publishing'
+    ],
+    slug: 'http://www.novabase.es/',
+    projects: [
+      {
+        name: 'Diario AS',
+        description:
+          'Migración de la página de Diario AS a tecnología ARC perteneciente al Washington Post'
+      }
+    ]
+  },
+  {
     company: 'Serbatic',
     location: 'Madrid',
-    duration: 'Enero 2019 - Actualidad',
+    duration: 'Enero 2019 - Diciembre 2020',
     technologies: [
       'VueJS',
       'ReactJS',
@@ -112,9 +129,26 @@ export const EXPERIENCE_SPANISH = [
 ];
 export const EXPERIENCE_ENGLISH = [
   {
+    company: 'Novabase',
+    location: 'Madrid',
+    duration: 'December 2020 - Present',
+    technologies: [
+      'ReactJS',
+      'ARC Publishing'
+    ],
+    slug: 'http://www.novabase.es/',
+    projects: [
+      {
+        name: 'Diario AS',
+        description:
+          'Migration of the Diario AS page to ARC technology that belongs to the Washington Post'
+      }
+    ]
+  },
+  {
     company: 'Serbatic',
     location: 'Madrid',
-    duration: 'January 2019 - Actuality',
+    duration: 'January 2019 - December 2020',
     projects: [
       {
         name: 'Chatbot AXA',
